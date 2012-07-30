@@ -76,6 +76,7 @@ accessors=false
 				,format     = structKeyExists(local.ExceptionStructure,'format') ? local.ExceptionStructure.format: '_no_format'
 				,url		= CGI.HTTP_HOST & CGI.path_info
 				,client		= CGI.HTTP_USER_AGENT
+				, referer 	= CGI.HTTP_REFERER
 			};
 
 			// Generate JSON for hashing
